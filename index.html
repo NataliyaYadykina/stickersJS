@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stickers App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="app-title">Stickers</h1>
+
+    <section class="stickers">
+      <div class="stickers_infomsg"></div>
+
+      <form class="stickers__form" onsubmit="return false;">
+        <textarea
+          class="stickers__form_text"
+          placeholder="Write sticker text..."
+        ></textarea>
+
+        <div class="color-group">
+          <label>BG:</label>
+          <input type="color" id="sticker_color-bg" />
+        </div>
+
+        <div class="color-group">
+          <label>Font:</label>
+          <input type="color" id="sticker_color-font" value="#ffffff" />
+        </div>
+
+        <div class="btn-group">
+          <button class="btn btn-add">Add</button>
+          <button class="btn btn-save hide">Save</button>
+          <button class="btn btn-cancel hide">Cancel</button>
+        </div>
+      </form>
+
+      <div class="stickers__wrap" id="stickersWrapper"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
